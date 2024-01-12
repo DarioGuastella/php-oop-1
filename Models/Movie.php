@@ -16,7 +16,21 @@ class Movie
 
     public function getMovieInfo()
     {
-        $result = $this->title . ", " . $this->director . ", " . $this->year . ", " . $this->genre . ".";
+        $result = "
+        <table>
+        <tr>
+          <th>Titolo</th>
+          <th>Regista</th>
+          <th>Anno</th>
+          <th>Genere</th>
+        </tr>
+        <tr>
+          <td>$this->title</td>
+          <td>$this->director</td>
+          <td>$this->year</td>
+          <td>$this->genre</td>
+        </tr>
+      </table>";
         return $result;
     }
 }

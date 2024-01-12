@@ -10,3 +10,7 @@ $the_naked_gun->genre .= ", poliziesco.";
 
 var_dump($back_to_the_future);
 var_dump($the_naked_gun);
+
+echo "<h1>Elenco film:</h1>";
+echo $back_to_the_future->getMovieInfo() . "<br>";
+echo $the_naked_gun->getMovieInfo();
